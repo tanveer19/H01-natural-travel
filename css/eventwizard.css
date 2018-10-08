@@ -1,0 +1,314 @@
+/*/*Global styles */
+body{
+   background-image: url('../images/random_grey_variations.png');
+}
+.bgimage, .bgImageBottom{
+  min-height: 350px;
+}
+.cycle img{
+  width: 700px;
+  max-width: 100%;
+  max-height: 350px;
+  vertical-align: middle;
+  border: 0;
+}
+.flex-container {
+  padding: 0;
+  margin: 0;
+  /*margin-bottom: 14px;*/
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+ }
+
+.flex-item {
+  width: 320px;
+  height: 240px;
+}
+div h1{
+  color: white;
+}
+.col-md-9{
+  padding-left: 0;
+}
+.col-md-9.gallery-page{
+  padding-right: 0;
+}
+.navbar-fixed-bottom {
+    left: 30%;
+  }
+a{
+  color: white;
+}
+li a:hover{
+  text-decoration: none;
+   color: tomato;
+}
+.home, .services, .gallery, .contact{
+    width: 90px;
+  height: 50px;
+  padding: 5px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  background: teal;
+}
+.home
+{
+	position: absolute;
+	top: 10px;
+	left: 50px;
+  }
+
+.services
+{
+	position: absolute;
+	top: 80px;
+	left: 115px;
+ }
+.gallery
+{
+	position: absolute;
+	top: 140px;
+	left: 60px;
+}
+.contact
+{
+	position: absolute;
+	top: 80px;
+	left: 5px;
+}
+
+span, .footer, p, #p2,.left, .middle, .right{
+  color: #FFFFFF;
+}
+
+#p2, p, .left, .middle, .right
+{
+  font-family: verdana, sans-serif;
+  font-size: 1.15em;
+}
+/* Global styles ends*/
+
+/* Home page starts*/
+
+
+/* Home page ends*/
+
+/* events page starts*/
+.left
+{
+  width: 290px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.middle {
+  left: 34%;
+  position: absolute;
+  top: 10%;
+  width: 300px;
+}
+.right {
+  left: 65%;
+  position: absolute;
+  top: 10%;
+  width: 300px;
+}
+
+/* events page ends*/
+
+/* services page starts*/
+.p3 {
+  width: 300px;
+  position: absolute;
+  top: 60%;
+  left: 25%;
+}
+.p4 {
+  width: 300px;
+  position: absolute;
+  top: 60%;
+  left: 55%;
+}
+
+.flowers
+{
+  position: absolute;
+  top: 40%;
+  left: 87%;
+
+}
+
+/* services page ends*/
+
+/* clients page starts*/
+.clientsbg {
+  left: 45%;
+  position: absolute;
+  top: 1%;
+}
+.clientslogo {
+  left: 87%;
+  position: absolute;
+  top: 1%;
+}
+
+.comment {
+  bottom: 105%;
+  left: 50%;
+  position: absolute;
+  text-align: justify;
+  width: 300px;
+}
+
+.clients-left
+{
+  width: 300px;
+  position:absolute;
+  top:10%;left:30%;
+  text-align:justify;
+}
+
+.clients-right
+{
+  width: 300px;
+  position:absolute;
+  top:10%;left:65%;
+  text-align:justify;
+}
+
+/* clients page ends*/
+
+/* About page starts */
+
+#about-bg {
+  position:absolute;
+  left:300px;
+  top:10px;
+}
+#about-mgt{
+  color: #9f7154;
+  font-family:"Myriad Pro";;
+  font-size: 20px;
+}
+#about{
+  width:650px;
+  height: 550px;
+  position:absolute;
+  left: 320px;
+  top: 10px;
+}
+
+.about-text-right>p, .about-text-left>p {
+
+  color:black;
+  width: 250px;
+  font-family: Verdana;
+  font-size: 9px;
+}
+.about-text-left{
+
+  text-align:justify;
+  position: absolute;
+  top:220px;
+
+
+}
+.about-text-right{
+  text-align:justify;
+  position: absolute;
+  left:300px;
+  top:220px;
+
+}
+.about-left{
+  float:left;
+  margin-left: 10%;
+}
+.about-right{
+  float:right;
+  margin-right: 25%;
+}
+
+
+/* About page ends */
+/* Gallery page starts */
+#mainImage{
+  border:3px solid teal;
+  position:absolute;
+  bottom:55%;
+  left:35%;
+}
+
+/* Gallery page ends */
+/* contact page starts */
+article>p{
+ width: 350px;
+ position: absolute;
+ left:25%;
+ bottom: 50%;
+ text-align: justify;
+ line-height:25px;
+}
+aside>p{
+  width: 350px;
+  height:350px;
+  position:absolute;
+  left: 65%;
+  bottom:-60%;
+  line-height:25px;
+}
+
+
+/* contact page ends */
+
+
+/* Footer Starts */
+body{
+  font-size: 1.5em;
+}
+
+li{
+  display: inline;
+}
+
+
+@media (min-width: 1920px) {
+  .bgimage {
+    height: 580px;
+  }
+  .bgImageBottom{
+    height: 500px;
+  }
+}
+  /*.footer a{
+    font-size: 30px;
+  }
+  p, a{
+    font-size: 27px;
+  }
+  */
+  .bgImageBottom p{
+    margin-top: 20px;
+  }
+  .navbar-default {
+   background-color: transparent; 
+   border-color: transparent; 
+ }
+ .navbar-default .navbar-nav > li > a {
+  color: white;
+}
+td{
+  color: white;
+}
+input{
+  color: black;
+}
