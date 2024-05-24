@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natural Project</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
   </head>
   <body>
     <header class="flex justify-between items-center m-5">
@@ -57,25 +61,14 @@
     <section
       class="h-screen bg-gradient-to-b from-cyan-200 flex flex-col gap-5 justify-center items-center"
     >
-      <div class="">
-        <ul class="flex gap-1 m-1">
-          <li class=""><img src="images/aurora.jpg" alt="" /></li>
-          <li class=""><img src="images/boat.jpg" alt="" /></li>
-          <li class=""><img src="images/dive.jpg" alt="" /></li>
-          <li class=""><img src="images/diver.jpg" alt="" /></li>
-        </ul>
+      <div class="my-slider">
+        <div><img src="images/aurora.jpg" alt="" /></div>
+        <div><img src="images/boat.jpg" alt="" /></div>
+        <div><img src="images/dive.jpg" alt="" /></div>
       </div>
+      <!-- or ul.my-slider > li -->
       <div class="">
         <h2 class="text-6xl text-center">Adventure Travel Experts</h2>
-      </div>
-
-      <div class="overflow-hidden">
-        <ul class="flex gap-5 m-1 animate-marquee">
-          <li class=""><img src="images/flower.jpg" alt="" /></li>
-          <li class=""><img src="images/jellyfish.jpg" alt="" /></li>
-          <li class=""><img src="images/lighthouse.jpg" alt="" /></li>
-          <li class=""><img src="images/mountain2.jpg" alt="" /></li>
-        </ul>
       </div>
     </section>
     <!-- provide section -->
@@ -120,5 +113,15 @@
     </section>
 
     <script type="module" src="/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script>
+      var slider = tns({
+        container: ".my-slider",
+        items: 1,
+        slideBy: "page",
+        autoplay: true,
+      });
+    </script>
+    <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
   </body>
 </html>
