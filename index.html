@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -59,16 +59,25 @@
 
     <!-- hero section -->
     <section
-      class="h-screen bg-gradient-to-b from-cyan-200 flex flex-col gap-5 justify-center items-center"
+      class="bg-gradient-to-b from-cyan-200 flex gap-5 justify-center items-center"
     >
-      <div class="my-slider">
-        <div><img src="images/aurora.jpg" alt="" /></div>
-        <div><img src="images/boat.jpg" alt="" /></div>
-        <div><img src="images/dive.jpg" alt="" /></div>
-      </div>
-      <!-- or ul.my-slider > li -->
-      <div class="">
+      <!-- text -->
+      <div class="w-1/2">
         <h2 class="text-6xl text-center">Adventure Travel Experts</h2>
+      </div>
+      <!-- swiper slider -->
+      <div class="w-1/2 swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/boat.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/lake.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <!-- provide section -->
@@ -113,15 +122,24 @@
     </section>
 
     <script type="module" src="/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
     <script>
-      var slider = tns({
-        container: ".my-slider",
-        items: 1,
-        slideBy: "page",
-        autoplay: true,
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
       });
     </script>
-    <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
   </body>
 </html>
