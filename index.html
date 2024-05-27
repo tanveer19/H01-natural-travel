@@ -61,26 +61,55 @@
     <section class="bg-gradient-to-b from-cyan-200">
       <!-- swiper slider -->
       <div class="swiper mySwiper">
+        <div
+          class="parallax-bg"
+          style="background-image: url(images/boat.jpg)"
+          data-swiper-parallax="-23%"
+        ></div>
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div>
-              <div class="flex justify-center">
-                <h2 class="text-6xl">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusamus, aliquam.
-                </h2>
-                <img class="" src="images/boat.jpg" alt="" />
-              </div>
+            <div class="title" data-swiper-parallax="-300">Slide 1</div>
+            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+            <div class="text" data-swiper-parallax="-100">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                laoreet justo vitae porttitor porttitor. Suspendisse in sem
+                justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh
+                euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+              </p>
             </div>
           </div>
           <div class="swiper-slide">
-            <div>
-              <div class="flex justify-center">
-                <h2 class="text-6xl">
-                  Lorem ipsum dolor sit elit. Accusamus, aliquam.
-                </h2>
-                <img class="" src="images/boat.jpg" alt="" />
-              </div>
+            <div class="title" data-swiper-parallax="-300">Slide 2</div>
+            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+            <div class="text" data-swiper-parallax="-100">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                laoreet justo vitae porttitor porttitor. Suspendisse in sem
+                justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh
+                euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-300">Slide 3</div>
+            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+            <div class="text" data-swiper-parallax="-100">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                laoreet justo vitae porttitor porttitor. Suspendisse in sem
+                justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh
+                euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+              </p>
             </div>
           </div>
         </div>
@@ -130,7 +159,7 @@
       </div>
     </section>
 
-    <script type="module" src="/main.js"></script>
+    <!-- <script type="module" src="/main.js"></script> -->
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -138,8 +167,8 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        effect: "fade",
+        speed: 600,
+        parallax: true,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
