@@ -18,51 +18,17 @@
   <body>
     <header class="max-w-6xl w-full mx-auto flex justify-between items-center">
       <div>
-        <img class="w-32 p-2" src="./images/nt-logo.png" alt="" />
+        <img class="w-32 p-2" src="./images/nt-logo.png" alt="logo" />
       </div>
-      <div>
-        <ul class="flex gap-2 space-x-8 mr-10 text-xl topnav" id="myTopnav">
-          <li>
-            <a
-              class="hover:text-cyan-400 hover:transition delay-300 duration-300 ease-in-out"
-              href="#"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              class="hover:text-cyan-400 hover:transition delay-300 duration-300 ease-in-out"
-              href="#"
-              >About Us</a
-            >
-          </li>
-          <li>
-            <a
-              class="hover:text-cyan-400 hover:transition delay-300 duration-300 ease-in-out"
-              href="#"
-              >Destination</a
-            >
-          </li>
-          <li>
-            <a
-              class="hover:text-cyan-400 hover:transition delay-300 duration-300 ease-in-out"
-              href="#"
-              >Pages</a
-            >
-          </li>
-          <li>
-            <a
-              class="hover:text-cyan-400 hover:transition delay-300 duration-300 ease-in-out"
-              href="#"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a href="javascript:void(0)" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </li>
-        </ul>
+
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </header>
 
@@ -223,6 +189,17 @@
           clickable: true,
         },
       });
+    </script>
+    <!-- navbar -->
+    <script>
+      function myFunction() {
+        let x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
     </script>
   </body>
 </html>
