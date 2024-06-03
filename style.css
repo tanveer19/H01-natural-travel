@@ -6,8 +6,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: #059669;
+}
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
 }
 
 /* nav */
@@ -53,11 +57,33 @@ body {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  /* color: #efefef; */
 }
 
 .nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  color: var(--primary-color);
+  transition: all 0.3s ease-in;
+}
+
+.underline-hover {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px; /* Thickness of the underline */
+  bottom: 0;
+  left: 0;
+  /* Color of the underline */
+  background-color: var(--primary-color);
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-hover:hover::after {
+  width: 100%;
 }
 
 .nav > #nav-check {
@@ -77,10 +103,10 @@ body {
     height: 50px;
     padding: 13px;
   }
-  .nav > .nav-btn > label:hover,
+  /* .nav > .nav-btn > label:hover,
   .nav #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
-  }
+  } */
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
@@ -91,7 +117,7 @@ body {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: teal;
+    background-color: var(--primary-color);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
@@ -135,7 +161,10 @@ body {
   background-size: cover;
   background-position: center;
 }
-
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
 .swiper-pagination-bullet-active {
   background-color: #059669 !important;
 }
