@@ -73,7 +73,7 @@
               </div>
             </div>
             <button
-              class="text-white bg-emerald-600 hover:bg-orange-500 transition-all duration-700 px-10 py-5 mt-5 shadow-xl rounded-l-full rounded-r-full"
+              class="text-white bg-primary-color hover:bg-secondary-color transition-all duration-700 px-10 py-5 mt-5 shadow-xl rounded-l-full rounded-r-full"
             >
               Explore Now
             </button>
@@ -246,16 +246,20 @@
           role="tab"
           class="tab"
           aria-label="Rentals"
+          checked
         />
+
         <div
           role="tabpanel"
-          class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+          class="tab-content bg-custom-color-1 border-base-300 rounded-box p-6"
         >
           <form
             class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-6xl"
           >
-            <div class="flex space-x-4 mb-4">
-              <div class="w-1/5">
+            <div
+              class="flex flex-col md:flex-row md:space-x-4 space-y-3 md:space-y-0 mb-4"
+            >
+              <div class="w-full md:w-1/5">
                 <label
                   class="block text-gray-700 font-bold mb-2"
                   for="destination"
@@ -269,7 +273,7 @@
                   placeholder=""
                 />
               </div>
-              <div class="w-1/5">
+              <div class="w-full md:w-1/5">
                 <label
                   class="block text-gray-700 font-bold mb-2"
                   for="check-in"
@@ -282,7 +286,7 @@
                   type="date"
                 />
               </div>
-              <div class="w-1/5">
+              <div class="w-full md:w-1/5">
                 <label
                   class="block text-gray-700 font-bold mb-2"
                   for="check-out"
@@ -295,7 +299,7 @@
                   type="date"
                 />
               </div>
-              <div class="w-1/5">
+              <div class="w-full md:w-1/5">
                 <label class="block text-gray-700 font-bold mb-2" for="adults">
                   Adults
                 </label>
@@ -307,7 +311,7 @@
                   placeholder="1"
                 />
               </div>
-              <div class="w-1/5">
+              <div class="w-full md:w-1/5">
                 <label
                   class="block text-gray-700 font-bold mb-2"
                   for="children"
@@ -324,7 +328,7 @@
               </div>
             </div>
 
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-center">
               <button
                 class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="button"
@@ -334,19 +338,299 @@
             </div>
           </form>
         </div>
-
         <input
           type="radio"
           name="my_tabs_2"
           role="tab"
           class="tab"
           aria-label="Flights"
+          checked
         />
+
         <div
           role="tabpanel"
-          class="tab-content bg-base-100 border-base-300 rounded-box p-6"
+          class="tab-content bg-custom-color-1 border-base-300 rounded-box p-6"
         >
-          Tab content 3
+          <form
+            class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-6xl"
+          >
+            <div
+              class="flex flex-col md:flex-row md:space-x-4 space-y-3 md:space-y-0 mb-4"
+            >
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="destination"
+                >
+                  Destination
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="destination"
+                  type="text"
+                  placeholder=""
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="check-in"
+                >
+                  Check In
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="check-in"
+                  type="date"
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="check-out"
+                >
+                  Check Out
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="check-out"
+                  type="date"
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label class="block text-gray-700 font-bold mb-2" for="adults">
+                  Adults
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="adults"
+                  type="number"
+                  min="1"
+                  placeholder="1"
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="children"
+                >
+                  Children
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="children"
+                  type="number"
+                  min="0"
+                  placeholder=""
+                />
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="button"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+        <input
+          type="radio"
+          name="my_tabs_2"
+          role="tab"
+          class="tab"
+          aria-label="Trips"
+          checked
+        />
+
+        <div
+          role="tabpanel"
+          class="tab-content bg-custom-color-1 border-base-300 rounded-box p-6"
+        >
+          <form
+            class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-6xl"
+          >
+            <div
+              class="flex flex-col md:flex-row md:space-x-4 space-y-3 md:space-y-0 mb-4"
+            >
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="destination"
+                >
+                  Destination
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="destination"
+                  type="text"
+                  placeholder=""
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="check-in"
+                >
+                  Check In
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="check-in"
+                  type="date"
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="check-out"
+                >
+                  Check Out
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="check-out"
+                  type="date"
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label class="block text-gray-700 font-bold mb-2" for="adults">
+                  Adults
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="adults"
+                  type="number"
+                  min="1"
+                  placeholder="1"
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="children"
+                >
+                  Children
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="children"
+                  type="number"
+                  min="0"
+                  placeholder=""
+                />
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="button"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+        <input
+          type="radio"
+          name="my_tabs_2"
+          role="tab"
+          class="tab"
+          aria-label="Activities"
+          checked
+        />
+
+        <div
+          role="tabpanel"
+          class="tab-content bg-custom-color-1 border-base-300 rounded-box p-6"
+        >
+          <form
+            class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-6xl"
+          >
+            <div
+              class="flex flex-col md:flex-row md:space-x-4 space-y-3 md:space-y-0 mb-4"
+            >
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="destination"
+                >
+                  Destination
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="destination"
+                  type="text"
+                  placeholder=""
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="check-in"
+                >
+                  Check In
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="check-in"
+                  type="date"
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="check-out"
+                >
+                  Check Out
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="check-out"
+                  type="date"
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label class="block text-gray-700 font-bold mb-2" for="adults">
+                  Adults
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="adults"
+                  type="number"
+                  min="1"
+                  placeholder="1"
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="children"
+                >
+                  Children
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="children"
+                  type="number"
+                  min="0"
+                  placeholder=""
+                />
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="button"
+              >
+                Search
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
