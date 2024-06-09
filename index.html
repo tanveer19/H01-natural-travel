@@ -5,14 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/images/nt-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natural Travel</title>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="style-custom.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -54,7 +55,7 @@
           <div class="swiper-slide">
             <div class="text-container">
               <div
-                class="title text-3xl font-bold text-emerald-600"
+                class="title text-3xl font-bold text-primary-color"
                 data-swiper-parallax="-300"
               >
                 New World Explore
@@ -81,7 +82,7 @@
           <div class="swiper-slide">
             <div class="text-container">
               <div
-                class="title text-3xl font-bold text-emerald-600"
+                class="title text-3xl font-bold text-primary-color"
                 data-swiper-parallax="-300"
               >
                 New World Explore
@@ -100,7 +101,7 @@
               </div>
             </div>
             <button
-              class="text-white bg-emerald-600 hover:bg-orange-500 transition-all duration-700 px-10 py-5 mt-5 shadow-xl rounded-l-full rounded-r-full"
+              class="text-white bg-primary-color hover:bg-orange-500 transition-all duration-700 px-10 py-5 mt-5 shadow-xl rounded-l-full rounded-r-full"
             >
               Explore Now
             </button>
@@ -108,7 +109,7 @@
           <div class="swiper-slide">
             <div class="text-container">
               <div
-                class="title text-3xl font-bold text-emerald-600"
+                class="title text-3xl font-bold text-primary-color"
                 data-swiper-parallax="-300"
               >
                 New World Explore
@@ -127,7 +128,7 @@
               </div>
             </div>
             <button
-              class="text-white bg-emerald-600 hover:bg-orange-500 transition-all duration-700 px-10 py-5 mt-5 shadow-xl rounded-l-full rounded-r-full"
+              class="text-white bg-primary-color hover:bg-orange-500 transition-all duration-700 px-10 py-5 mt-5 shadow-xl rounded-l-full rounded-r-full"
             >
               Explore Now
             </button>
@@ -146,8 +147,8 @@
           type="radio"
           name="my_tabs_2"
           role="tab"
-          class="tab"
-          aria-label="Hotels"
+          class="tab peer peer-checked:bg-secondary-color"
+          aria-label="Resorts"
           checked
         />
 
@@ -232,10 +233,9 @@
 
             <div class="flex items-center justify-center">
               <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="button"
+                class="text-white bg-primary-color hover:bg-secondary-color transition-all duration-700 px-10 py-5 mt-5 shadow-xl rounded-l-full rounded-r-full"
               >
-                Search
+                Search Now
               </button>
             </div>
           </form>
@@ -245,7 +245,7 @@
           name="my_tabs_2"
           role="tab"
           class="tab"
-          aria-label="Rentals"
+          aria-label="Rents"
           checked
         />
 
@@ -330,10 +330,9 @@
 
             <div class="flex items-center justify-center">
               <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="button"
+                class="text-white bg-primary-color hover:bg-secondary-color transition-all duration-700 px-10 py-5 mt-5 shadow-xl rounded-l-full rounded-r-full"
               >
-                Search
+                Search Now
               </button>
             </div>
           </form>
@@ -343,7 +342,7 @@
           name="my_tabs_2"
           role="tab"
           class="tab"
-          aria-label="Flights"
+          aria-label="Planes"
           checked
         />
 
@@ -428,10 +427,9 @@
 
             <div class="flex items-center justify-center">
               <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="button"
+                class="text-white bg-primary-color hover:bg-secondary-color transition-all duration-700 px-10 py-5 mt-5 shadow-xl rounded-l-full rounded-r-full"
               >
-                Search
+                Search Now
               </button>
             </div>
           </form>
@@ -441,7 +439,7 @@
           name="my_tabs_2"
           role="tab"
           class="tab"
-          aria-label="Trips"
+          aria-label="Tours"
           checked
         />
 
@@ -526,10 +524,9 @@
 
             <div class="flex items-center justify-center">
               <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="button"
+                class="text-white bg-primary-color hover:bg-secondary-color transition-all duration-700 px-10 py-5 mt-5 shadow-xl rounded-l-full rounded-r-full"
               >
-                Search
+                Search Now
               </button>
             </div>
           </form>
@@ -539,7 +536,7 @@
           name="my_tabs_2"
           role="tab"
           class="tab"
-          aria-label="Activities"
+          aria-label="Works"
           checked
         />
 
@@ -624,10 +621,106 @@
 
             <div class="flex items-center justify-center">
               <button
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="button"
+                class="text-white bg-primary-color hover:bg-secondary-color transition-all duration-700 px-10 py-5 mt-5 shadow-xl rounded-l-full rounded-r-full"
               >
-                Search
+                Search Now
+              </button>
+            </div>
+          </form>
+        </div>
+        <input
+          type="radio"
+          name="my_tabs_2"
+          role="tab"
+          class="tab"
+          aria-label="others"
+          checked
+        />
+
+        <div
+          role="tabpanel"
+          class="tab-content bg-custom-color-1 border-base-300 rounded-box p-6"
+        >
+          <form
+            class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-6xl"
+          >
+            <div
+              class="flex flex-col md:flex-row md:space-x-4 space-y-3 md:space-y-0 mb-4"
+            >
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="destination"
+                >
+                  Destination
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="destination"
+                  type="text"
+                  placeholder=""
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="check-in"
+                >
+                  Check In
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="check-in"
+                  type="date"
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="check-out"
+                >
+                  Check Out
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="check-out"
+                  type="date"
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label class="block text-gray-700 font-bold mb-2" for="adults">
+                  Adults
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="adults"
+                  type="number"
+                  min="1"
+                  placeholder="1"
+                />
+              </div>
+              <div class="w-full md:w-1/5">
+                <label
+                  class="block text-gray-700 font-bold mb-2"
+                  for="children"
+                >
+                  Children
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="children"
+                  type="number"
+                  min="0"
+                  placeholder=""
+                />
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center">
+              <button
+                class="text-white bg-primary-color hover:bg-secondary-color transition-all duration-700 px-10 py-5 mt-5 shadow-xl rounded-l-full rounded-r-full"
+              >
+                Search Now
               </button>
             </div>
           </form>
@@ -636,7 +729,7 @@
     </section>
     <!-- provide section -->
     <section class="bg-gradient-to-b from-teal-200">
-      <h2>WHAT WE PROVIDE</h2>
+      <h2>Our Services</h2>
       <div>
         <h1>TOP VALUES FOR YOU</h1>
         <img src="" alt="" />
