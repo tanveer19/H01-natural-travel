@@ -4,6 +4,7 @@
 
 :root {
   --primary-color: #aff1dc;
+  --primary-color-dark: #21c189;
   --secondary-color: #ff8900;
 }
 
@@ -114,7 +115,7 @@ body {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-dark);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
@@ -148,7 +149,7 @@ body {
   padding: 40px 60px;
 }
 
-.parallax-bg {
+/* .parallax-bg {
   position: absolute;
   left: 0;
   top: 0;
@@ -157,13 +158,13 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
-}
+} */
 .swiper-pagination-bullet {
   width: 15px;
   height: 15px;
 }
 .swiper-pagination-bullet-active {
-  background-color: var(--secondary-color) !important;
+  background-color: var(--primary-color-dark) !important;
 }
 .swiper-button-next,
 .swiper-button-prev {
