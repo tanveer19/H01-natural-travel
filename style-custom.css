@@ -5,9 +5,22 @@
 :root {
   --primary-color: #aff1dc;
   --primary-color-dark: #21c189;
+  --primary-color-light: #b2f3de;
   --secondary-color: #ff8900;
 }
 
+.bg-primary-color-dark {
+  background-color: var(--primary-color-dark);
+}
+.bg-primary-color-dark:hover {
+  background-color: var(--secondary-color);
+}
+.bg-primary-color-light {
+  background-color: var(--primary-color-light);
+}
+.text-primary-color-dark {
+  color: var(--primary-color-dark);
+}
 body {
   font-family: "Roboto", sans-serif !important;
 }
@@ -149,16 +162,6 @@ body {
   padding: 40px 60px;
 }
 
-/* .parallax-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 130%;
-  height: 100%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-} */
 .swiper-pagination-bullet {
   width: 15px;
   height: 15px;
