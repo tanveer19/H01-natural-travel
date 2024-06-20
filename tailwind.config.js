@@ -7,6 +7,7 @@ export default {
         // "primary-color": "#21c189",
         // "secondary-color": "#ff8900",
         // "custom-color-1": "#b2f3de",
+        "bg-primary-color-light": "#ff8900",
       },
     },
   },
