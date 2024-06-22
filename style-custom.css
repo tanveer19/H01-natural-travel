@@ -84,13 +84,12 @@ body {
 }
 
 .nav > .nav-links > a:hover {
-  color: var(--primary-color);
+  color: var(--primary-color-dark);
   transition: all 0.3s ease-in;
 }
 
 .underline-hover {
   position: relative;
-  display: inline-block;
   cursor: pointer;
 }
 
@@ -102,7 +101,7 @@ body {
   bottom: 0;
   left: 0;
   /* Color of the underline */
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-dark);
   transition: width 0.3s ease-in-out;
 }
 
