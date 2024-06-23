@@ -755,7 +755,31 @@
     </section>
 
     <!-- carousel section -->
-    <section class="max-w-6xl w-full mx-auto"></section>
+    <section class="max-w-6xl w-full mx-auto">
+      <div class="swiper swiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/dive.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/lake.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/lighthouse.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/mountain2.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/mountain3.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/pathtosea.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
 
     <!-- <script type="module" src="/main.js"></script> -->
 
@@ -766,18 +790,25 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         speed: 600,
-        parallax: true,
-        // autoplay: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+        autoplay: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
       });
     </script>
+
+    <script>
+      var swiper = new Swiper(".swiper2", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
     <!-- <script
       src="https://kit.fontawesome.com/c5b8b41db0.js"
       crossorigin="anonymous"
