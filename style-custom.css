@@ -173,6 +173,11 @@ body {
   padding: 40px 60px;
 }
 
+.swiper-slide .swiper2 {
+  background-color: white !important;
+  padding: 5px !important;
+}
+
 .swiper-pagination-bullet {
   width: 15px;
   height: 15px;
