@@ -167,15 +167,10 @@ body {
   height: 100%;
 }
 
-.swiper-slide {
+.swiper-slide.swiper1 {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 60px;
-}
-
-.swiper-slide .swiper2 {
-  background-color: white !important;
-  padding: 5px !important;
 }
 
 .swiper-pagination-bullet {
@@ -188,6 +183,20 @@ body {
 .swiper-button-next,
 .swiper-button-prev {
   display: none !important;
+}
+
+/* second swiper  */
+
+.swiper-slide.swiper2 {
+  background-color: white !important;
+  padding: 5px !important;
+}
+
+.swiper-slide.swiper2 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* form */

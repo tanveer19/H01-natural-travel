@@ -51,7 +51,7 @@
     <section class="max-w-6xl w-full mx-auto">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide flex items-center">
+          <div class="swiper-slide swiper1 flex items-center">
             <div class="w-full sm:w-1/2 flex flex-col sm:block">
               <div class="text-container text-center sm:text-left">
                 <div class="title text-3xl font-bold text-primary-color-dark">
@@ -75,7 +75,7 @@
               />
             </div>
           </div>
-          <div class="swiper-slide flex items-center">
+          <div class="swiper-slide swiper1 flex items-center">
             <div class="w-full sm:w-1/2 flex flex-col sm:block">
               <div class="text-container text-center sm:text-left">
                 <div class="title text-3xl font-bold text-primary-color-dark">
@@ -99,7 +99,7 @@
               />
             </div>
           </div>
-          <div class="swiper-slide flex items-center">
+          <div class="swiper-slide swiper1 flex items-center">
             <div class="w-full sm:w-1/2 flex flex-col sm:block">
               <div class="text-container text-center sm:text-left">
                 <div class="title text-3xl font-bold text-primary-color-dark">
@@ -765,25 +765,25 @@
           in the World
         </h1>
       </div>
-      <div class="swiper swiper2">
+      <div class="max-w-6xl swiper swiper2">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper2">
             <h3 class="text-2xl">Argentina</h3>
             <img src="images/dive.jpg" alt="" />
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper2">
             <img src="images/pathtosea.jpg" alt="" />
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper2">
             <img src="images/lighthouse.jpg" alt="" />
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper2">
             <img src="images/mountain2.jpg" alt="" />
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper2">
             <img src="images/mountain3.jpg" alt="" />
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper2">
             <img src="images/pathtosea.jpg" alt="" />
           </div>
         </div>
@@ -800,7 +800,7 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         speed: 600,
-        autoplay: true,
+        autoplay: false,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
