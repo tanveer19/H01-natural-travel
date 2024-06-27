@@ -189,7 +189,7 @@ body {
 
 .swiper-slide.swiper2 {
   background-color: white !important;
-  padding: 5px !important;
+  /* padding: 5px !important; */
 }
 
 .swiper-slide.swiper2 img {
