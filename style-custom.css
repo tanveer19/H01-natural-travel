@@ -35,7 +35,8 @@
 /* colors end */
 
 body {
-  font-family: "Roboto", sans-serif !important;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
 }
 
 /* nav */
@@ -43,15 +44,9 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0px;
-  font-family: "segoe ui";
-}
-
 .nav {
   height: 50px;
   width: 100%;
-  /* background-color: #4d4d4d; */
   position: relative;
   z-index: 99;
 }
