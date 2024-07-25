@@ -5,10 +5,6 @@
     <link rel="icon" type="image/svg+xml" href="/images/nt-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natural Travel</title>
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    /> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -1114,7 +1110,9 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
 
@@ -1155,17 +1153,15 @@
             spaceBetween: 50,
           },
         },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>
-
-    <!-- <script
-      src="https://kit.fontawesome.com/c5b8b41db0.js"
-      crossorigin="anonymous"
-    ></script> -->
-    <!-- navbar -->
   </body>
 </html>
