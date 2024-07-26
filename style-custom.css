@@ -193,6 +193,40 @@ body {
   margin-bottom: -12px !important;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.swiper-button-prev:hover svg path,
+.swiper-button-next:hover svg path {
+  fill: white;
+  transition-property: all;
+  transition-duration: 700ms;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: var(--secondary-color);
+  transition-property: all;
+  transition-duration: 700ms;
+}
+
+.swiper-btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+.swiper-btn img {
+  margin: 5px;
+}
+
 /* form */
 
 .tab:checked {
