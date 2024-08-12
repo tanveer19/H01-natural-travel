@@ -1243,7 +1243,7 @@
 
     <!--top destinations -->
 
-    <section class="bg-gradient-to-b from-teal-200 jost-font">
+    <section class="bg-gradient-to-b from-teal-200 jost-font p-10">
       <div class="text-center text-xl">
         <h3 class="font-bold text-primary-color-dark my-8 w-64 mx-auto">
           Top Destinations
@@ -1263,11 +1263,7 @@
 
               <div class="card bg-base-100 shadow-xl">
                 <figure class="relative">
-                  <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt=""
-                    class=""
-                  />
+                  <img src="/images/cycle.jpg" alt="" class="" />
                   <div
                     class="badge p-4 bg-secondary-color text-white border-white border-2 absolute top-5 right-5 font-bold"
                   >
@@ -1278,12 +1274,64 @@
                   <p>RIO, Brazil</p>
 
                   <h2 class="card-title">Enjoy the beauty of Brazil city</h2>
-                  <div class="flex">
+                  <div class="flex gap-1">
                     <img class="w-6" src="/images/star.svg" alt="" />
                     <span> 4.9 (1.7k Review)</span>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper3 rounded-lg group">
+            <div class="from-teal-100 p-5 rounded-lg">
+              <!-- daisyui card -->
+
+              <div class="card bg-base-100 shadow-xl">
+                <figure class="relative">
+                  <img src="/images/cycle.jpg" alt="" class="" />
+                  <div
+                    class="badge p-4 bg-secondary-color text-white border-white border-2 absolute top-5 right-5 font-bold"
+                  >
+                    $299
+                  </div>
+                </figure>
+                <div class="card-body">
+                  <p>RIO, Brazil</p>
+
+                  <h2 class="card-title">Enjoy the beauty of Brazil city</h2>
+                  <div class="flex gap-1">
+                    <img class="w-6" src="/images/star.svg" alt="" />
+                    <span> 4.9 (1.7k Review)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-btn">
+            <div class="swiper-button-prev">
+              <svg
+                width="20px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"
+                  fill="#9ca3af"
+                />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg
+                width="20px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"
+                  fill="#9ca3af"
+                />
+              </svg>
             </div>
           </div>
         </div>
@@ -1329,6 +1377,34 @@
         //   el: ".swiper-pagination",
         //   clickable: true,
         // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!--  Swiper 3-->
+
+    <script>
+      var swiper = new Swiper(".swiper3", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        breakpoints: {
+          100: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
