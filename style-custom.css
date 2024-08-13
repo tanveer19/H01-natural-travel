@@ -259,3 +259,9 @@ body {
 }
 
 /* third swiper top Destinations */
+.swiper-button-next.swiper3:hover,
+.swiper-button-prev.swiper3:hover {
+  background-color: var(--primary-color-dark);
+  transition-property: all;
+  transition-duration: 700ms;
+}
