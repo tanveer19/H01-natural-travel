@@ -185,12 +185,14 @@ body {
 
 /* second swiper Popular Destinations */
 
-.swiper-slide.swiper2 {
-  background-color: white !important;
+.swiper-slide.swiper2,
+.swiper-slide.swiper4 {
+  background-color: white;
 }
 
 .swiper-slide.swiper2 .swiper-img,
-.swiper-slide.swiper3 .swiper-img {
+.swiper-slide.swiper3 .swiper-img,
+.swiper-slide.swiper4 .swiper-img {
   display: block;
   width: 100%;
   height: 100%;

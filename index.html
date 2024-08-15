@@ -1413,7 +1413,7 @@
     <section class="w-full mx-auto bg-[url('/images/stars.jpg')] bg-cover py-4">
       <div class="text-center pt-20">
         <h3 class="text-secondary-color font-bold text-2xl">
-          REVIEW AND TESTIMONIAL
+          REVIEW AND TESTIMONIALS
         </h3>
         <h1 class="text-white text-3xl font-bold mt-5 mb-24">
           What Our Customers Are <br />
@@ -1423,125 +1423,37 @@
 
       <!-- swiper 4 -->
 
-      <div class="max-w-6xl swiper swiper2 p-3">
+      <div class="max-w-6xl swiper swiper4 p-3">
         <div class="swiper-wrapper">
-          <div class="swiper-slide swiper2 rounded-lg group">
+          <div class="swiper-slide swiper4 rounded-lg group">
             <div
-              class="group-hover:bg-gradient-to-b from-teal-100 p-5 rounded-lg"
+              class="group-hover:bg-gradient-to-b from-teal-100 p-5 rounded-lg relative"
             >
               <img
-                class="w-5 bg-orange-100 p-1 rounded-full inline"
-                src="images/location-dot.svg"
-                alt="location"
-              />
-              <span class="text-gray-400">Green, Forest </span>
-              <h3 class="text-2xl font-bold my-2">Green Forest</h3>
-              <img
-                class="hover:scale-x-105 transition-all duration-[3000ms] swiper-img"
-                src="images/lake.jpg"
+                class="bg-gray-500 w-16 rounded-full p-4 absolute right-5 -top-9"
+                src="/images/quote-right.svg"
                 alt=""
               />
-              <div class="text-gray-400 flex justify-around items-center mt-1">
-                <div class="">
-                  <img
-                    class="w-5 inline mb-1"
-                    src="/images/person-biking-mountain.svg"
-                    alt="activities"
-                  />
-                  <span>10 activities </span>
-                </div>
-                <div class="">
-                  <img
-                    class="w-5 inline mb-1"
-                    src="/images/map-location-dot.svg"
-                    alt="map"
-                  />
-                  <span> 12 places </span>
-                </div>
-                <div class="">
-                  <img
-                    class="w-4 inline mb-1"
-                    src="/images/calendar-days.svg"
-                    alt="calendar"
-                  />
-                  <span>1 week </span>
-                </div>
-              </div>
-              <hr class="border" />
-              <div class="flex items-center mt-3 justify-around">
-                <p>
-                  <span class="font-bold">$545 </span>
-                  <span class="text-gray-400"> /Person </span>
-                </p>
-                <button
-                  class="text-white bg-gray-400 group-hover:bg-primary-color-dark transition-all duration-700 px-5 py-2 shadow-xl rounded-l-full rounded-r-full"
-                >
-                  View availability
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide swiper2 rounded-lg group">
-            <div
-              class="group-hover:bg-gradient-to-b from-teal-100 p-5 rounded-lg"
-            >
               <img
-                class="w-5 bg-orange-100 p-1 rounded-full inline"
-                src="images/location-dot.svg"
-                alt="location"
-              />
-              <span class="text-gray-400">Green, Forest </span>
-              <h3 class="text-2xl font-bold my-2">Green Forest</h3>
-              <img
-                class="hover:scale-x-105 transition-all duration-[3000ms] swiper-img"
-                src="images/lake.jpg"
+                class="hover:scale-x-105 transition-all duration-[3000ms] rounded-full border-2 border-white"
+                src="images/P1.jpg"
                 alt=""
               />
-              <div class="text-gray-400 flex justify-around items-center mt-1">
-                <div class="">
-                  <img
-                    class="w-5 inline mb-1"
-                    src="/images/person-biking-mountain.svg"
-                    alt="activities"
-                  />
-                  <span>10 activities </span>
-                </div>
-                <div class="">
-                  <img
-                    class="w-5 inline mb-1"
-                    src="/images/map-location-dot.svg"
-                    alt="map"
-                  />
-                  <span> 12 places </span>
-                </div>
-                <div class="">
-                  <img
-                    class="w-4 inline mb-1"
-                    src="/images/calendar-days.svg"
-                    alt="calendar"
-                  />
-                  <span>1 week </span>
-                </div>
-              </div>
-              <hr class="border" />
-              <div class="flex items-center mt-3 justify-around">
-                <p>
-                  <span class="font-bold">$545 </span>
-                  <span class="text-gray-400"> /Person </span>
-                </p>
-                <button
-                  class="text-white bg-gray-400 group-hover:bg-primary-color-dark transition-all duration-700 px-5 py-2 shadow-xl rounded-l-full rounded-r-full"
-                >
-                  View availability
-                </button>
-              </div>
+              <p class="text-base my-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cupiditate pariatur accusantium ipsa, ea unde tenetur odit atque
+                temporibus laudantium, fugit accusamus placeat numquam quis
+                fugiat! Aut placeat quasi odit ab?
+              </p>
+              <h3 class="text-2xl font-bold">Abigail Dawson</h3>
+              <p>generated company</p>
             </div>
           </div>
         </div>
         <!-- <div class="swiper-pagination"></div> -->
 
         <div class="swiper-btn">
-          <div class="swiper-button-prev">
+          <div class="swiper-button-prev swiper4-button-prev">
             <svg
               width="20px"
               xmlns="http://www.w3.org/2000/svg"
@@ -1553,7 +1465,7 @@
               />
             </svg>
           </div>
-          <div class="swiper-button-next">
+          <div class="swiper-button-next swiper4-button-next">
             <svg
               width="20px"
               xmlns="http://www.w3.org/2000/svg"
@@ -1639,6 +1551,34 @@
         navigation: {
           nextEl: ".swiper3-button-next",
           prevEl: ".swiper3-button-prev",
+        },
+      });
+    </script>
+
+    <!--  Swiper 4 -->
+
+    <script>
+      var swiper = new Swiper(".swiper4", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        breakpoints: {
+          100: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+
+        navigation: {
+          nextEl: ".swiper4-button-next",
+          prevEl: ".swiper4-button-prev",
         },
       });
     </script>
