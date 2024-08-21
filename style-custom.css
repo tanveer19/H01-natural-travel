@@ -219,6 +219,10 @@ body {
   transition-property: all;
   transition-duration: 700ms;
 }
+.quote-svg:hover {
+  background-color: var(--primary-color-dark);
+}
+
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   background-color: var(--secondary-color);

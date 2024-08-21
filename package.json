@@ -9,13 +9,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.19",
+    "autoprefixer": "^10.4.20",
     "daisyui": "^4.12.10",
-    "postcss": "^8.4.40",
-    "tailwindcss": "^3.4.7",
-    "vite": "^5.3.5"
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "vite": "^5.4.2"
   },
   "dependencies": {
-    "vercel": "^35.2.2"
+    "vercel": "^35.2.4"
   }
 }
