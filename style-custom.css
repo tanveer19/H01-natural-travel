@@ -273,13 +273,13 @@ body {
 /* news images */
 
 .card-zoom {
-  @apply relative flex items-center justify-center m-3 overflow-hidden shadow-xl w-96 h-60 rounded-2xl;
+  @apply relative flex items-center justify-center m-3 overflow-hidden shadow-xl w-96 h-96 rounded-2xl;
 }
 .card-zoom-image {
   @apply absolute w-full h-full transition-all duration-1000 ease-in-out transform bg-center bg-cover;
 }
 .card-zoom-text {
-  @apply absolute transition-all duration-1000 ease-in-out transform scale-105 text-white mt-40;
+  @apply absolute transition-all duration-1000 ease-in-out transform scale-105 text-white mt-40 p-5;
 }
 .card-zoom:hover .card-zoom-image {
   @apply scale-125;
