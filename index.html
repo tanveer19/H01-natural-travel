@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/images/nt-icon.png" />
     <title>Natural Travel</title>
-
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  /> -->
     <link rel="stylesheet" href="swiper-bundle.css" />
     <link rel="stylesheet" href="tailwind.css" />
     <link rel="stylesheet" href="style-custom.css" />
   </head>
   <body class="bg-gradient-to-b from-teal-200">
     <header
-      class="max-w-6xl w-full mx-auto flex justify-between items-center bg-white rounded-full"
+      class="max-w-6xl w-full mx-auto px-5 flex justify-between items-center bg-white rounded-full"
     >
       <div>
         <a href="./">
@@ -63,9 +66,9 @@
             </div>
             <div class="w-full sm:w-1/2">
               <img
-                class="w-[600px] h-[400px] hidden sm:block"
-                src="images/aircraft.svg"
-                alt="plane"
+                class="w-[700px] h-[400px] hidden sm:block"
+                src="images/car-yellow.svg"
+                alt=""
               />
             </div>
           </div>
@@ -87,9 +90,9 @@
             </div>
             <div class="w-full sm:w-1/2">
               <img
-                class="w-[500px] h-[400px] hidden sm:block"
-                src="images/boat.svg"
-                alt="plane"
+                class="w-[400px] h-[400px] hidden sm:block"
+                src="images/car-red.svg"
+                alt=""
               />
             </div>
           </div>
@@ -112,8 +115,8 @@
             <div class="w-full sm:w-1/2">
               <img
                 class="w-[600px] h-[400px] hidden sm:block"
-                src="images/suv.svg"
-                alt="plane"
+                src="images/boy-travel.svg"
+                alt=""
               />
             </div>
           </div>
@@ -1725,15 +1728,62 @@
 
     <!-- footer -->
     <section class="bg-gradient-to-b from-teal-200 jost-font p-2">
+      <!-- logos -->
       <div
-        class="w-full max-w-6xl mx-auto bg-white rounded-xl grid grid-cols-3 md:grid-cols-6 p-10 gap-5 items-center justify-items-center"
+        class="bg-white rounded-xl grid grid-cols-3 md:grid-cols-6 p-10 gap-5 items-center justify-items-center max-w-6xl mx-auto"
       >
-        <img src="/images/partner-logo-1.png" alt="" />
-        <img src="/images/partner-logo-2.png" alt="" />
-        <img src="/images/partner-logo-3.png" alt="" />
-        <img src="/images/partner-logo-4.png" alt="" />
-        <img src="/images/partner-logo-5.png" alt="" />
-        <img src="/images/partner-logo-6.png" alt="" />
+        <img
+          class="hover:-translate-y-2 duration-[500ms]"
+          src="/images/partner-logo-1.png"
+          alt=""
+        />
+        <img
+          class="hover:-translate-y-2 duration-[500ms]"
+          src="/images/partner-logo-2.png"
+          alt=""
+        />
+        <img
+          class="hover:-translate-y-2 duration-[500ms]"
+          src="/images/partner-logo-3.png"
+          alt=""
+        />
+        <img
+          class="hover:-translate-y-2 duration-[500ms]"
+          src="/images/partner-logo-4.png"
+          alt=""
+        />
+        <img
+          class="hover:-translate-y-2 duration-[500ms]"
+          src="/images/partner-logo-5.png"
+          alt=""
+        />
+        <img
+          class="hover:-translate-y-2 duration-[500ms]"
+          src="/images/partner-logo-6.png"
+          alt=""
+        />
+      </div>
+      <!-- footer links -->
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-[2fr_1fr_1fr_1fr] items-center justify-items-center"
+      >
+        <div class="">
+          <div>
+            <a href="./">
+              <img class="w-44 p-1" src="./images/nt-logo.png" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div class="">
+          <h3 class="text-3xl font-bold">Quick Links</h3>
+          <!-- <hr class="w-10 mt-3 text-primary-color-dark bg-primary-color-dark" /> -->
+        </div>
+        <div class="">
+          <h3 class="text-3xl font-bold">Support</h3>
+        </div>
+        <div class="">
+          <h3 class="text-3xl font-bold">Get in Touch</h3>
+        </div>
       </div>
     </section>
 
@@ -1743,7 +1793,7 @@
     <!--  Swiper 1 -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        speed: 600,
+        speed: 1000,
         autoplay: false,
         pagination: {
           el: ".swiper-pagination",

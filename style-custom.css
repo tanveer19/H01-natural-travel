@@ -183,6 +183,21 @@ body {
   display: none !important;
 }
 
+/* img-scale animation */
+
+/* .img-scale {
+  animation: scale-up 6s infinite;
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+} */
+
 /* second swiper Popular Destinations */
 
 .swiper-slide.swiper2,
