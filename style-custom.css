@@ -165,11 +165,11 @@ body {
   height: 100%;
 }
 
-.swiper-slide.swiper1 {
+/* .swiper-slide.swiper1 {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 60px;
-}
+} */
 
 .swiper-pagination-bullet {
   width: 15px;
